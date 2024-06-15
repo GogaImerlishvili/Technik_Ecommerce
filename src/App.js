@@ -1,10 +1,17 @@
 import "./App.css";
+import { Outlet } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="">
-      <h1 className="text-red-500">Mern Apsp</h1>
-    </div>
+    <>
+    <Header />
+    <main>
+    <Outlet />
+    </main>
+    <Footer />
+    </>
   );
 }
 
